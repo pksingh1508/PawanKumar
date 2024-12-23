@@ -19,8 +19,8 @@ function About() {
             />
           </div>
           <div className='text-gray-200 w-[80%] sm:w-[60%] md:w-[40%] flex flex-col gap-4 bg-[#adb5bd] bg-opacity-20 px-5 py-5 rounded-lg '>
-            <p>Hi, I'm Pawan, a 20-year-old Computer Science graduate passionate about creating impactful digital experiences. With over a year of experience as a Full Stack Web and Mobile Developer, I specialize in building dynamic, user-centric applications.</p>
-            <p>Beyond coding, I enjoy sharing my knowledge through speaking engagements and insightful write-ups, inspiring others to grow and innovate. My work bridges creativity and technology, delivering solutions that make a difference.</p>
+            <p>Hi&apos; I&apos;m Pawan&apos; a 20-year-old Computer Science graduate passionate about creating impactful digital experiences. With over a year of experience as a Full Stack Web and Mobile Developer&apos; I specialize in building dynamic&apos; user-centric applications.</p>
+            <p>Beyond coding&apos; I enjoy sharing my knowledge through speaking engagements and insightful write-ups&apos; inspiring others to grow and innovate. My work bridges creativity and technology&apos; delivering solutions that make a difference.</p>
           </div>
         </div>
         <div className=''>
