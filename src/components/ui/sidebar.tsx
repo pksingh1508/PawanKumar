@@ -113,7 +113,7 @@ export const MobileSidebar = ({
     <>
       <div
         className={cn(
-          "h-10 px-4 py-4 flex flex-row md:hidden  items-center justify-between bg-neutral-100 dark:bg-neutral-800 w-full"
+          "h-10 px-4 py-4 flex flex-row md:hidden  items-center justify-between bg-neutral-100 dark:bg-neutral-950 w-full"
         )}
         {...props}
       >
@@ -164,10 +164,10 @@ export const SidebarLink = ({
   setLink: (id: number) => void;
   props?: LinkProps;
 }) => {
-  const { open, animate } = useSidebar();
+  const { setOpen } = useSidebar();
   return (
     <div
-      onClick={() => setLink(link.id)}
+      onClick={() => {setLink(link.id); setOpen(false)}}
       className={cn(
         "flex items-center justify-start gap-4 py-4 z-20 cursor-pointer hover:scale-105 hover:translate-x-1 transition-all duration-500 hover:bg-[#adb5bd] hover:bg-opacity-20 rounded-lg px-2",
         className
@@ -177,10 +177,6 @@ export const SidebarLink = ({
       {link.icon}
 
       <motion.span
-        animate={{
-          display: animate ? (open ? "inline-block" : "none") : "inline-block",
-          opacity: animate ? (open ? 1 : 0) : 1,
-        }}
         className="text-neutral-700 dark:text-neutral-200 text-sm  whitespace-pre inline-block !p-0 !m-0"
       >
         {link.label}

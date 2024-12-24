@@ -40,7 +40,7 @@ export const AnimatedTestimonials = ({
   }, [autoplay]);
 
   return (
-    <div className="w-full h-screen mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20 flex items-center justify-center">
+    <div className="w-full h-fit md:h-screen mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20 flex items-center justify-center">
       <div className="w-[300px] md:w-[400px]">
         <div className="flex justify-between flex-col py-4">
           <motion.div

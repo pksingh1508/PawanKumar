@@ -1,62 +1,50 @@
 import React from 'react'
-import { Button } from "./ui/moving-border";
-import { skillData1, skillData2, skillData3, skillData4, skillData5, skillData6 } from '@/constants/skillData';
+import { button1, button2, button3, button4, button5 } from '@/constants/skillData';
 import { BackgroundBeamsWithCollision } from './ui/background-beams-with-collision';
+import { ButtonsCard } from './ui/tailwindcss-buttons';
 
 function Skills() {
   return (
-    <BackgroundBeamsWithCollision>
-    <div className='w-full h-full flex flex-col items-center justify-center gap-5'>
-        <div className='flex flex-wrap gap-5'>
-            {skillData1.map((skill, index) => (
-                <Button key={index} className="mr-2 mb-2 hover:translate-y-1 hover:scale-125 transition-all duration-700"> 
-                    {skill.icon}
-                    <span className="text-[1.2rem] ml-4">{skill.name}</span>
-                </Button>
-            ))}
-        </div>
-        <div className='flex flex-wrap gap-5'>
-            {skillData2.map((skill, index) => (
-                <Button key={index} className="mr-2 mb-2 hover:translate-y-1 hover:scale-125 transition-all duration-700" containerClassName='w-48'> 
-                    {skill.icon}
-                    <span className="text-[1.2rem] ml-4">{skill.name}</span>
-            </Button>
-            ))}
-        </div>
-        <div className='flex flex-wrap gap-6'>
-            {skillData3.map((skill, index) => (
-                <Button key={index} className="mr-2 mb-2 hover:translate-y-1 hover:scale-125 transition-all duration-700"> 
-                    {skill.icon}
-                    <span className="text-[1.2rem] ml-4">{skill.name}</span>
-            </Button>
-            ))}
-        </div>
-        <div className='flex flex-wrap gap-6'>
-            {skillData4.map((skill, index) => (
-                <Button key={index} className="mr-2 mb-2 hover:translate-y-1 hover:scale-125 transition-all duration-700" containerClassName='w-44'> 
-                    {skill.icon}
-                    <span className="text-[1.2rem] ml-4">{skill.name}</span>
-            </Button>
-            ))}
-        </div>
-        <div className='flex flex-wrap gap-4'>
-            {skillData5.map((skill, index) => (
-                <Button key={index} className="mr-2 mb-2 hover:translate-y-1 hover:scale-125 transition-all duration-700"> 
-                    {skill.icon}
-                    <span className="text-[1.2rem] ml-4">{skill.name}</span>
-            </Button>
-            ))}
-        </div>
-        <div className='flex flex-wrap gap-4'>
-            {skillData6.map((skill, index) => (
-                <Button key={index} className="mr-2 mb-2 hover:translate-y-1 hover:scale-125 transition-all duration-700"> 
-                    {skill.icon}
-                    <span className="text-[1.2rem] ml-4">{skill.name}</span>
-            </Button>
-            ))}
-        </div>
-    </div>
-    </BackgroundBeamsWithCollision>
+        <BackgroundBeamsWithCollision>
+            <div className='w-full h-full flex flex-col items-center justify-center gap-5'>
+                <div className="px-4 w-full flex flex-row gap-4 md:gap-6 justify-center flex-wrap">
+                    {button5.map((button, idx) => (
+                        <ButtonsCard key={idx}>
+                        {button.component}
+                        </ButtonsCard>
+                    ))}
+                </div>
+                <div className="px-4 w-full flex flex-row gap-4 justify-center flex-wrap">
+                    {button4.map((button, idx) => (
+                        <ButtonsCard key={idx}>
+                        {button.component}
+                        </ButtonsCard>
+                    ))}
+                </div>
+                <div className="px-4 w-full flex flex-row gap-4 justify-center flex-wrap">
+                    {button3.map((button, idx) => (
+                        <ButtonsCard key={idx}>
+                        {button.component}
+                        </ButtonsCard>
+                    ))}
+                </div>
+                <div className="px-4 w-full flex flex-row gap-4 justify-center flex-wrap">
+                    {button2.map((button, idx) => (
+                        <ButtonsCard key={idx}>
+                        {button.component}
+                        </ButtonsCard>
+                    ))}
+                </div>
+                <div className="px-4 w-full flex flex-row gap-4 justify-center flex-wrap">
+                    {button1.map((button, idx) => (
+                        <ButtonsCard key={idx}>
+                        {button.component}
+                        </ButtonsCard>
+                    ))}
+                </div>
+                
+            </div>
+        </BackgroundBeamsWithCollision>
   )
 }
 
