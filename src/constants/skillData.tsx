@@ -10,11 +10,10 @@ import {
   IconBrandDocker,
   IconApi,
   IconDatabase,
-  IconTerminal,
   IconDatabaseOff,
-  IconDotsCircleHorizontal,
   IconCode,
-  IconBrandAws
+  IconBrandAws,
+  IconBrandReactNative
 } from "@tabler/icons-react";
 
 export const button5 = [
@@ -24,8 +23,8 @@ export const button5 = [
       <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] md:p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-          <IconBrandNodejs className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 mr-2" />
-          Node.js
+          <IconBrandReactNative className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 mr-2" />
+          React Native
         </span>
       </button>
     ),
@@ -115,8 +114,8 @@ export const button4 = [{
       <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] md:p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-          <IconBrandDocker className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 mr-2" />
-          Docker
+          <IconBrandNodejs className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 mr-2" />
+          Node JS
         </span>
       </button>
     ),
@@ -187,8 +186,8 @@ export const button1 = [
       <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] md:p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-          <IconDotsCircleHorizontal className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 mr-2" />
-          More
+          <IconBrandDocker className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 mr-2" />
+          Docker
         </span>
       </button>
     ),
