@@ -8,7 +8,7 @@ function Projects() {
       <div className='hidden md:block w-full h-full bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 pb-6'>
         <ProjectLg />
       </div>
-      <div className='block md:hidden w-full items-center'>
+      <div className='block md:hidden w-full items-center bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 pb-6'>
         <ProjectSm />
       </div>
     </>

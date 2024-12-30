@@ -5,42 +5,68 @@ export function Reviews() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Learning web development with Pawan has been an incredible experience. His teaching style is clear and makes even tough concepts easy to understand.",
+      name: "Riya Sharma",
+      designation: "Computer Science Undergraduate",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Pawan's guidance helped me land my first internship. His projects are not only educational but also fun to work on.",
+      name: "Kunal Patel",
+      designation: "Engineering Student",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "The personalized feedback and hands-on exercises were a game-changer for my coding skills. I can't thank Pawan enough!",
+      name: "Aditi Verma",
+      designation: "Final Year IT Student",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "I was struggling with React Native, but Pawan's resources and mentorship helped me build my first mobile app in just a few weeks.",
+      name: "Manish Gupta",
+      designation: "Self-taught Developer",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Pawan has an amazing ability to break down complex topics into simple, digestible parts. His tutorials are the best I’ve ever come across.",
+      name: "Anjali Deshmukh",
+      designation: "Fresh Graduate in Computer Applications",
+    },
+    {
+      quote:
+        "His mentorship helped me create a portfolio that stands out. The practical projects we worked on gave me real-world experience.",
+      name: "Rahul Nair",
+      designation: "Third-Year CS Student",
+    },
+    {
+      quote:
+        "The reverse engineering sessions Pawan organized were eye-opening. He always encourages us to think outside the box.",
+      name: "Siddharth Jain",
+      designation: "Ethical Hacking Enthusiast",
+    },
+    {
+      quote:
+        "I built a solid foundation in JavaScript thanks to Pawan’s beginner-friendly approach. He’s a true mentor for aspiring developers.",
+      name: "Sneha Roy",
+      designation: "First-Year Engineering Student",
+    },
+    {
+      quote:
+        "The project-based learning method Pawan follows is highly effective. I was able to showcase my skills during campus placements confidently.",
+      name: "Vivek Kumar",
+      designation: "Fourth-Year Computer Science Student",
+    },
+    {
+      quote:
+        "Pawan's dedication to helping students grow is unmatched. He always goes the extra mile to ensure we understand the concepts thoroughly.",
+      name: "Neha Agarwal",
+      designation: "Freelance Web Developer",
     },
   ];
+  
   return (
-    <BackgroundBeamsWithCollision>
+    <BackgroundBeamsWithCollision className="h-[99%] md:h-screen">
       <AnimatedTestimonials testimonials={testimonials} />;
     </BackgroundBeamsWithCollision>
   )

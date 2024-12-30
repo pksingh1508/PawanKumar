@@ -8,8 +8,8 @@ import {
   IconApps,
   IconSchool,
   IconDeviceMobileMessage,
-  IconKeyboardShow,
-  IconRefreshAlert
+  IconRefreshAlert,
+  IconFileCv
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -21,6 +21,8 @@ import Contact from "./Contact";
 import { Educations } from "./Educations";
 import { Reviews } from "./Reviews";
 import Projects from "./Projects";
+import Resume from "./Resume";
+import Image from "next/image";
 
 export function SidebarDemo() {
   const links = [
@@ -29,7 +31,7 @@ export function SidebarDemo() {
       href: '#',
       id: 1,
       icon: (
-        <IconHome className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconHome className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 group-hover:rotate-12 transition-all duration-200 ease-in-out" />
       ),
     },
     {
@@ -37,7 +39,7 @@ export function SidebarDemo() {
       href: '#',
       id: 2,
       icon: (
-        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 group-hover:rotate-12 transition-all duration-200 ease-in-out" />
       ),
     },
     {
@@ -45,7 +47,7 @@ export function SidebarDemo() {
       href: '#',
       id: 3,
       icon: (
-        <IconAdjustmentsCode className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconAdjustmentsCode className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 group-hover:rotate-12 transition-all duration-200 ease-in-out" />
       ),
     },
     {
@@ -53,7 +55,7 @@ export function SidebarDemo() {
       href: '#',
       id: 4,
       icon: (
-        <IconApps className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconApps className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 group-hover:rotate-12 transition-all duration-200 ease-in-out" />
       ),
     },
     {
@@ -61,7 +63,7 @@ export function SidebarDemo() {
       href: '#',
       id: 5,
       icon: (
-        <IconSchool className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconSchool className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 group-hover:rotate-12 transition-all duration-200 ease-in-out" />
       ),
     },
     {
@@ -69,7 +71,7 @@ export function SidebarDemo() {
       href: '#',
       id: 6,
       icon: (
-        <IconDeviceMobileMessage className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconDeviceMobileMessage className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 group-hover:rotate-12 transition-all duration-200 ease-in-out" />
       ),
     },
     {
@@ -77,7 +79,15 @@ export function SidebarDemo() {
       href: '#',
       id: 7,
       icon: (
-        <IconRefreshAlert className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconRefreshAlert className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 group-hover:rotate-12 transition-all duration-200 ease-in-out" />
+      ),
+    },
+    {
+      label: "Resume",
+      href: '#',
+      id: 8,
+      icon: (
+        <IconFileCv className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0 group-hover:rotate-12 transition-all duration-200 ease-in-out" />
       ),
     },
   ];
@@ -113,15 +123,20 @@ export const Logo = () => {
   return (
     <Link
       href="#"
-      className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
+      className="font-normal flex space-x-1 items-center text-sm text-black py-1 relative z-20"
     >
-      <IconKeyboardShow className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0"/>
+      <Image 
+        src={'https://i.ibb.co/BG0scD8/logo.png'}
+        alt="logo"
+        width={30}
+        height={30}
+      />
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="font-large text-black dark:text-white whitespace-pre"
       >
-        Pawan Kumar
+        [Pawan Kumar]
       </motion.span>
     </Link>
   );
@@ -148,6 +163,7 @@ const Dashboard = ({value}: any) => {
       {value === 5 && <Educations />}
       {value === 6 && <Contact />}
       {value === 7 && <Reviews />}
+      {value === 8 && <Resume />}
     </div>
   );
 };

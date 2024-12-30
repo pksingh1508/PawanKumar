@@ -169,7 +169,7 @@ export const SidebarLink = ({
     <div
       onClick={() => {setLink(link.id); setOpen(false)}}
       className={cn(
-        "flex items-center justify-start gap-4 py-4 z-20 cursor-pointer hover:scale-105 hover:translate-x-1 transition-all duration-500 hover:bg-[#adb5bd] hover:bg-opacity-20 rounded-lg px-2",
+        "flex items-center justify-start gap-4 py-4 z-20 cursor-pointer hover:scale-105 hover:translate-x-1 transition-all duration-500 hover:bg-[#adb5bd] hover:bg-opacity-20 rounded-lg px-2 group",
         className
       )}
       {...props}
