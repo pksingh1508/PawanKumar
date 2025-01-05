@@ -36,5 +36,15 @@ export const projectData = [
         technologies: ["Next js,", "TypeScript,", "Clerk,", "Zustand,", "Tailwind CSS"],
         github: "https://github.com/pksingh1508/hackathonHub",
         url: "https://hackathonwallah.com",
+    },
+    {
+        id: 5,
+        title: "Bhagavad Gita - Read MahaBharat",
+        description: "Build a Mobile App to learn the Mahabharat.",
+        description1: "It list all the chapters on the Home Page.",
+        description2: "It includes all the verses of the individual chapters.",
+        technologies: ["React-Native,", "TypeScript,", "Rapid API,",],
+        github: "https://github.com/pksingh1508/BhagavadGita_App",
+        url: "https://expo.dev/accounts/pawankumar1212/projects/BhagwadGita/builds/747afc01-bdd6-44b5-adfb-ea9cdf979a97",
     }
 ]
